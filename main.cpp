@@ -17,9 +17,12 @@
   * @note Northwestern University
   */
 
+#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>  // true, false
+
+using std::cout;
+using std::endl;
 
 //
 // When including header files that are meant for C,
