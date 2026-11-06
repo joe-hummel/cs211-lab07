@@ -47,7 +47,7 @@ extern "C" {
   */
 int main(int argc, char* argv[])
 {
-  FILE* input = NULL;
+  FILE* input = nullptr;
   bool  keyboardInput = false;
 
   //
@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
 
     input = fopen(filename, "r");
 
-    if (input == NULL) // unable to open:
+    if (input == nullptr) // unable to open:
     {
       printf("**ERROR: unable to open input file '%s' for input.\n", filename);
       return 0;
@@ -87,7 +87,7 @@ int main(int argc, char* argv[])
   //
   struct TokenQueue* tokens = parser_parse(input);
 
-  if (tokens == NULL)
+  if (tokens == nullptr)
   {
     // 
     // program has a syntax error, error msg already output:
